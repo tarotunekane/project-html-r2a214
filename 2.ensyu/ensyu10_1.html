@@ -1,0 +1,37 @@
+<!-- 作成日：2024年/08/27-->
+<!-- 作成者:常包　太良-->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>疑似要素の練習</title>>
+    <style type="text/css">
+        h3:befor{
+          content:"★";
+        }
+        a::after{
+          content: url(img/arrow.png);
+          vertical-align:middle;
+        }
+        p.letter::first-letter{
+          font-size: 2em;
+        }
+        p.line::first-letter{
+          font-size:2em;
+        }
+    </style>
+  </head>
+  <body>
+    <h3>タイトルの先頭に星マーク追加</h3>
+    <a herf="#">語尾に矢印の画面を追加</a>
+    <p class="letter">
+      日本では、正月におせちやお雑煮を食べる文化があります。お雑煮
+      は地域によってはグザイや味付けが様々です。
+    </p>
+    <p class="line">
+      このように1文字目だけ、また1行目だけスタイルを変えることに
+      よって、読みやすくなります。長文が続くときのアクセントにもなります。
+    </p>
+  </body>
+</html>
